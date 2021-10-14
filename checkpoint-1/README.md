@@ -18,21 +18,28 @@
 **SOME INSTRUCTION HERE e.g: Run question1.sql or copy and paste the queries below**
 
 
-* For TOP5 Richest Neighborhood:
+* Table of the richest and lowest income:
 ```sql
-SELECT name, id, median_income
-FROM  data_area
-WHERE median_income IS NOT NULL
-ORDER BY CAST( replace(replace(median_income, '$',''),',','') AS INT )DESC
-LIMIT 5;
-```
-* For TOP5 Lowest income Neighborhood:
-```sql
-SELECT name, id, median_income
-FROM  data_area
-WHERE median_income IS NOT NULL
-ORDER BY CAST( replace(replace(median_income, '$',''),',','') AS INT )ASC
-LIMIT 5;
+DROP TABLE IF EXISTS income_ranl;
+CREATE TEMP TABLE income_rank AS(
+    SELECT richest.rank AS rank,richest.id AS richest_id, richest.name AS richest_name, richest.median_income AS richest_incom,
+           lowest.id AS lowest_id, lowest.name AS lowest_name, lowest.median_income AS lowest_incom
+    FROM
+        (SELECT ROW_NUMBER() OVER(ORDER BY CAST( replace(replace(median_income, '$',''),',','') AS INT )DESC ) AS rank, name, id, median_income
+        FROM  data_area
+        WHERE median_income IS NOT NULL
+        ORDER BY rank
+        LIMIT 5) AS richest
+        LEFT JOIN
+            (SELECT ROW_NUMBER() OVER(ORDER BY CAST( replace(replace(median_income, '$',''),',','') AS INT )ASC ) AS rank, name, id, median_income
+            FROM  data_area
+            WHERE median_income IS NOT NULL
+            ORDER BY rank
+            LIMIT 5) AS lowest
+        ON richest.rank = lowest.rank
+);
+
+SELECT * FROM income_rank;
 ```
 
 ### What is the income and CRs(complaint record) per capita?
