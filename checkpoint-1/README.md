@@ -17,6 +17,7 @@
 ### What is the TOP5 richest and lowest neighborhoods?
 **SOME INSTRUCTION HERE e.g: Run question1.sql or copy and paste the queries below**
 
+
 * For TOP5 Richest Neighborhood:
 ```sql
 SELECT name, id, median_income
@@ -37,6 +38,7 @@ LIMIT 5;
 ### What is the income and CRs(complaint record) per capita?
 **SOME INSTRUCTION HERE e.g: Run question1.sql or copy and paste the queries below**
 
+
 ```sql
 SELECT DISTINCT first_name,last_name,rank,current_salary, complaint_percentile, civilian_allegation_percentile
 FROM data_officer
@@ -54,6 +56,7 @@ ORDER BY salary DESC ;
 
 ### What is the TRRS(tactical response report) per capita?
 **SOME INSTRUCTION HERE e.g: Run question1.sql or copy and paste the queries below**
+
 
 * For all officers showing in trr table:
 ```sql
@@ -73,6 +76,7 @@ FROM
 ### What is the percentage of each race in the community.
 **SOME INSTRUCTION HERE e.g: Run question1.sql or copy and paste the queries below**
 
+
 ```sql
 SELECT id,name,A.race,A.ratio
 FROM data_area,
@@ -85,6 +89,7 @@ WHERE  data_area.id = A.area_id;
 
 ### What is the top 5 streets in allegation counts for each beat area?
 **SOME INSTRUCTION HERE e.g: Run question1.sql or copy and paste the queries below**
+
 
 ```sql
 SELECT *
