@@ -80,7 +80,7 @@ officers is fallacious in many cases. However, with the development of natural
 language processing, we may apply it to label complaint texts with high accuracy.
 This would help a lot in understanding and analyzing misconduct. Technical solutions
 span classical algorithms like TF-IDF and cutting-edge research methods like graph
-neural networks**[2]** and BERT**[3]**. We plan to dive deeper
+neural networks **[2]** and BERT **[3]**. We plan to dive deeper
 into the area and find out more effective and proper methods for us.
 
 ## References
