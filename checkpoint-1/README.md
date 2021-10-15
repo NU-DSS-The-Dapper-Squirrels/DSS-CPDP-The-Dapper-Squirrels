@@ -4,11 +4,11 @@
 
 
 ## Our Questions
-* What is the TOP5 richest and lowest income neighborhoods?
-* What is the income and CRs(complaint record) per capita?
-* What is the TRRS(tactical response report) per capita?
-* What is the percentage of each race in the community?
-* What is the top 5 streets in allegation counts for each beat area?
+1. What is the TOP5 richest and lowest income neighborhoods?
+2. What is the income and CRs(complaint record) per capita?
+3. What is the TRRS(tactical response report) per capita?
+4. What is the percentage of each race in the community?
+5. What is the top 5 streets in allegation counts for each beat area?
 
 
 
