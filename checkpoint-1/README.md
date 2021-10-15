@@ -95,3 +95,9 @@ FROM
 ) b
 WHERE beat_id IS NOT NULL AND add2 IS NOT NULL AND rank <= 5;
 ```
+
+## What to expect from the data?
+
+Here is a simple visualization of the tables by using Tableau:
+
+![output](img/output.png)
