@@ -47,18 +47,10 @@ SELECT * FROM income_rank;
 
 
 ```sql
-SELECT DISTINCT first_name,last_name,rank,current_salary, complaint_percentile, civilian_allegation_percentile
-FROM data_officer
-WHERE current_salary IS NOT NULL
-ORDER BY current_salary DESC ;
-```
-* There is a alternative query since the officers' rank is different in data_officer and data_salary:
-```sql
-SELECT DISTINCT first_name,last_name,data_officer.rank,salary, complaint_percentile, civilian_allegation_percentile
-FROM data_officer
-   LEFT JOIN data_salary ds on data_officer.id = ds.officer_id
-WHERE salary IS NOT NULL
-ORDER BY salary DESC ;
+SELECT dar.median_income,dar.name
+FROM data_allegation da
+LEFT JOIN data_area dar On dar.id = da.beat_id
+WHERE dar.median_income IS NOT NULL ;
 ```
 
 ### What is the TRRS(tactical response report) per capita?
