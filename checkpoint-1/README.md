@@ -2,15 +2,15 @@
 
 ## Getting Started
 
+By executing the `src/analysis_questions.sql`, the data query will be processed.
 
 ## Our Questions
+
 1. [What is the TOP5 richest and lowest income neighborhoods?](#what-is-the-top5-richest-and-lowest-neighborhoods)
 2. [What is the income and CRs(complaint record) per capita?](#what-is-the-income-and-crscomplaint-record-per-capita)
 3. [What is the TRRS(tactical response report) per capita?](#what-is-the-trrstactical-response-report-per-capita)
 4. [What is the percentage of each race in the community?](#what-is-the-percentage-of-each-race-in-the-community)
 5. [What is the top 5 streets in allegation counts for each beat area?](#what-is-the-top-5-streets-in-allegation-counts-for-each-beat-area)
-
-
 
 ## Queries
 
