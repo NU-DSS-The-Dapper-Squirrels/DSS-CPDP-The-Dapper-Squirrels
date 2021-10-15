@@ -16,8 +16,6 @@ query will be processed. You could also copy each query and paste in console.
 ## Queries
 
 ### What are the TOP5 richest and lowest neighborhoods?
-**SOME INSTRUCTION HERE e.g: Run question1.sql or copy and paste the queries below**
-
 
 * Table of the richest and lowest income:
 ```sql
@@ -44,8 +42,6 @@ SELECT * FROM income_rank;
 ```
 
 ### What are the neighborhoods’ income and CRs(complaint record) per capita?
-**SOME INSTRUCTION HERE e.g: Run question1.sql or copy and paste the queries below**
-
 
 ```sql
 SELECT dar.median_income,dar.name
@@ -63,7 +59,6 @@ group by d.name;
 ```
 
 ### What are the TRRs(tactical response report) per capita?
-**SOME INSTRUCTION HERE e.g: Run question1.sql or copy and paste the queries below**
 
 * For all officers showing in trr table:
 ```sql
@@ -75,8 +70,6 @@ WHERE dar.name IS NOT NULL
 ```
 
 ### What is the percentage of each race in the community.
-**SOME INSTRUCTION HERE e.g: Run question1.sql or copy and paste the queries below**
-
 
 ```sql
 SELECT id,name,A.race,A.ratio
@@ -89,8 +82,6 @@ WHERE  data_area.id = A.area_id;
 ```
 
 ### What are the top 5 streets in allegation counts for each beat area?
-**SOME INSTRUCTION HERE e.g: Run question1.sql or copy and paste the queries below**
-
 
 ```sql
 SELECT *
