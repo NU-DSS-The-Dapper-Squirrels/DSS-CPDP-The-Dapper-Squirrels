@@ -42,7 +42,7 @@ CREATE TEMP TABLE income_rank AS(
 SELECT * FROM income_rank;
 ```
 
-### What is the income and CRs(complaint record) per capita?
+### What are the neighborhoods’ income and CRs(complaint record) per capita?
 **SOME INSTRUCTION HERE e.g: Run question1.sql or copy and paste the queries below**
 
 
