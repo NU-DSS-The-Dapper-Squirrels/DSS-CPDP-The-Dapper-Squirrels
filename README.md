@@ -1,6 +1,16 @@
 # Data Science Seminar on CPDP Database
 #### Team: the dapper squirrels
 
+- [Theme](#theme)
+- [Relational Analysis Questions](#relational-analysis-questions)
+- [Verification Technique](#verification-technique)
+  * [Visualization](#visualization)
+  * [Interactive Visualization](#interactive-visualization)
+  * [Graph Analytics](#graph-analytics)
+  * [NLP models](#nlp-models)
+- [References](#references)
+- [License](#license)
+
 ## Theme
 
 Misconduct analysis in terms of different locations and communities can be valuable.
