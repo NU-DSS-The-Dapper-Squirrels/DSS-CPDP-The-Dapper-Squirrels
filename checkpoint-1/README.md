@@ -54,7 +54,7 @@ FROM data_complainant
 WHERE dar.median_income IS NOT NULL ;
 ```
 ```sql
-SELECT count(*) AS complaints, d.name
+SELECT count(*) AS number_of_complaints, d.name AS beat_name
 FROM data_complainant
     LEFT JOIN data_allegation da on data_complainant.allegation_id = da.crid
     LEFT JOIN data_area d on da.beat_id = d.id
