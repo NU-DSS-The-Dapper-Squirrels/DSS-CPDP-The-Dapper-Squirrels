@@ -101,12 +101,13 @@ WHERE  data_area.id = A.area_id;
 ```sql
 SELECT *
 FROM
-   (SELECT beat_id, add2, rank() Over(PARTITION BY add2 ORDER BY cnt DESC )
-   FROM (SELECT beat_id, add2, count(*) AS cnt
-       FROM public.data_allegation
-       WHERE beat_id IS NOT NULL and add2 IS NOT NULL
-       GROUP BY beat_id, add2
-   ) a
+    (SELECT beat_id, add2, cnt, RANK() OVER(PARTITION BY beat_id ORDER BY cnt DESC) AS rank
+    FROM (SELECT beat_id, add2, COUNT(*) AS cnt
+        FROM public.data_allegation
+        WHERE beat_id IS NOT NULL AND add2 IS NOT NULL
+        GROUP BY beat_id, add2
+    ) a
 ) b
-WHERE rank <= 5
+WHERE beat_id IS NOT NULL AND add2 IS NOT NULL AND rank <= 5
+;
 ```
