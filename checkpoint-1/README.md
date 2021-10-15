@@ -2,7 +2,8 @@
 
 ## Getting Started
 
-By executing the `src/analysis_questions.sql`, the data query will be processed.
+By executing the `src/analysis_questions.sql` inside postgresql console, the data
+query will be processed. You could also copy each query and paste in console.
 
 ## Our Questions
 
@@ -48,8 +49,8 @@ SELECT * FROM income_rank;
 
 ```sql
 SELECT dar.median_income,dar.name
-FROM data_complainant 
-    LEFT JOIN data_allegation da ON data_complainant.allegation_id = da.crid 
+FROM data_complainant
+    LEFT JOIN data_allegation da ON data_complainant.allegation_id = da.crid
     LEFT JOIN data_area dar On dar.id = da.beat_id
 WHERE dar.median_income IS NOT NULL ;
 ```
@@ -57,20 +58,13 @@ WHERE dar.median_income IS NOT NULL ;
 ### What are the TRRs(tactical response report) per capita?
 **SOME INSTRUCTION HERE e.g: Run question1.sql or copy and paste the queries below**
 
-
 * For all officers showing in trr table:
 ```sql
-SELECT  CAST(count(*) AS float)/CAST(count( DISTINCT officer_id) AS float) AS trr_per_capital
-FROM trr_trr;
-```
-* For all offices showing in officer table:
-```sql
-SELECT a.total_trr/b.total_officer
-FROM
-   (SELECT CAST(count(*) AS float) AS total_trr
-   FROM trr_trr) AS a,
-   (SELECT  CAST(count(*) AS float) AS total_officer
-   FROM data_officer) AS b;
+SELECT dar.name,dar.median_income,trr_trr.officer_id,trr_trr.id
+FROM trr_trr
+    LEFT JOIN data_officer dof ON trr_trr.officer_id = dof.id
+    LEFT JOIN data_area dar ON dar.commander_id = dof.id
+WHERE dar.name IS NOT NULL
 ```
 
 ### What is the percentage of each race in the community.
@@ -101,6 +95,5 @@ FROM
         GROUP BY beat_id, add2
     ) a
 ) b
-WHERE beat_id IS NOT NULL AND add2 IS NOT NULL AND rank <= 5
-;
+WHERE beat_id IS NOT NULL AND add2 IS NOT NULL AND rank <= 5;
 ```
