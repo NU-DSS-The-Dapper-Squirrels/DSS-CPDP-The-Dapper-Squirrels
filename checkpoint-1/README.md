@@ -48,8 +48,9 @@ SELECT * FROM income_rank;
 
 ```sql
 SELECT dar.median_income,dar.name
-FROM data_allegation da
-LEFT JOIN data_area dar On dar.id = da.beat_id
+FROM data_complainant 
+    LEFT JOIN data_allegation da ON data_complainant.allegation_id = da.crid 
+    LEFT JOIN data_area dar On dar.id = da.beat_id
 WHERE dar.median_income IS NOT NULL ;
 ```
 
