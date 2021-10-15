@@ -1,6 +1,8 @@
 # Data Science Seminar on CPDP Database
 #### Team: the dapper squirrels
 
+## Table of Contents
+
 - [Theme](#theme)
 - [Relational Analysis Questions](#relational-analysis-questions)
 - [Verification Technique](#verification-technique)
