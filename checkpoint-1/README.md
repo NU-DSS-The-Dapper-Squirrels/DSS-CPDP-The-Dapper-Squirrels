@@ -53,6 +53,13 @@ FROM data_complainant
     LEFT JOIN data_area dar On dar.id = da.beat_id
 WHERE dar.median_income IS NOT NULL ;
 ```
+```sql
+SELECT count(*) AS complaints, d.name
+FROM data_complainant
+    LEFT JOIN data_allegation da on data_complainant.allegation_id = da.crid
+    LEFT JOIN data_area d on da.beat_id = d.id
+group by d.name;
+```
 
 ### What are the TRRs(tactical response report) per capita?
 **SOME INSTRUCTION HERE e.g: Run question1.sql or copy and paste the queries below**
