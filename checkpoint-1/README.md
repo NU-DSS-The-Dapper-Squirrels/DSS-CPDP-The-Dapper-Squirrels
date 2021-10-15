@@ -14,7 +14,7 @@ By executing the `src/analysis_questions.sql`, the data query will be processed.
 
 ## Queries
 
-### What is the TOP5 richest and lowest neighborhoods?
+### What are the TOP5 richest and lowest neighborhoods?
 **SOME INSTRUCTION HERE e.g: Run question1.sql or copy and paste the queries below**
 
 
@@ -54,7 +54,7 @@ FROM data_complainant
 WHERE dar.median_income IS NOT NULL ;
 ```
 
-### What is the TRRS(tactical response report) per capita?
+### What are the TRRs(tactical response report) per capita?
 **SOME INSTRUCTION HERE e.g: Run question1.sql or copy and paste the queries below**
 
 
@@ -87,7 +87,7 @@ FROM data_area,
 WHERE  data_area.id = A.area_id;
 ```
 
-### What is the top 5 streets in allegation counts for each beat area?
+### What are the top 5 streets in allegation counts for each beat area?
 **SOME INSTRUCTION HERE e.g: Run question1.sql or copy and paste the queries below**
 
 
