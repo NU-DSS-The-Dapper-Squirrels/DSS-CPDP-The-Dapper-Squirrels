@@ -131,3 +131,4 @@ dmypy.json
 **/.DS_Store
 **/__pycache__
 **/.pytest_cache
+.idea/
