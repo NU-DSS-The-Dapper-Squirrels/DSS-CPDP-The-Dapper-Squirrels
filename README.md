@@ -30,6 +30,8 @@ misconduct.
 4. What is the percentage of each race in the community?
 5. What are the top 5 streets in allegation counts for each beat area?
 
+Please check out SQLs and findings in [`checkpoint-1`](checkpoint-1/).
+
 ## Verification Technique
 
 ### Visualization
@@ -43,6 +45,7 @@ each community by years if change over time.
 capita. We could also consider lawsuits between “victims” and police officers;
 search warrants granted in each complaint?
 
+Please check out our code and findings in [`checkpoint-2`](checkpoint-2/).
 
 ### Interactive Visualization
 
