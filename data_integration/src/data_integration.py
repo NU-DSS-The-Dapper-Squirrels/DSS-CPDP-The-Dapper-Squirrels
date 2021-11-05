@@ -406,7 +406,7 @@ def re_order(
     # Reorder columns
     df_trr = df_trr_new[trr_output_order.replace(" ", "").split(",")]
     df_trrstatus = df_trrstatus[trr_trrstatus_output_order.replace(" ", "").split(",")]
-
+    return df_trr,df_trrstatus
 
 def check_key(
     df_trr,
@@ -524,7 +524,7 @@ def main():
         sub_weapon_refresh,
     )
 
-    re_order(
+    df_trr, df_trrstatus = re_order(
         df_trr,
         df_unit,
         df_actionresponse,
