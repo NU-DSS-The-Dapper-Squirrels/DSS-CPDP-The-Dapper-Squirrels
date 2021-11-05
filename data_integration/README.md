@@ -64,7 +64,7 @@ want to install by importing the `requirement.txt`, use
 `pipenv install -r path/to/requirements. txt` to install.
 
 The complete dependency list is as follows, please also refer to [Pipfile](Pipfile)
-and [requirement.txt](requirement.txt).
+and [requirements.txt](requirements.txt).
 
 ```
 pandas = "*"
