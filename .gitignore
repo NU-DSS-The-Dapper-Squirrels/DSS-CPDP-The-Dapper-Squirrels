@@ -132,3 +132,4 @@ dmypy.json
 **/__pycache__
 **/.pytest_cache
 .idea/
+data_integration/output/trr-trrstatus.csv
