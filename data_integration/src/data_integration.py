@@ -457,6 +457,7 @@ def discard_item(ancher, helper, df_name):
 
 
 def main():
+    print("Loading Data...")
     # Import trr_trr_refresh
     df_trr = pd.read_csv("data/trr_trr_refresh.csv")
     # Import trr_weapondischarge_refresh
@@ -473,8 +474,14 @@ def main():
     df_officer = pd.read_csv("data/data_officer.csv")
     # Import data_policeunit
     df_unit = pd.read_csv("data/data_policeunit.csv", dtype=str)
+    print("Loading Finished")
+    print("--------------------")
     # Set df
+    print("Processing Type Correction...")
     df_set(df_trr, df_weapondischarge, df_trrstatus, sub_weapon_refresh)
+    print("Type Correction Done")
+    print("--------------------")
+    print("Processing Reconciliation...")
     reconciliation_race(df_trr["subject_race"])
     reconciliation_gender(df_trr["subject_gender"])
     reconciliation_birth_year(df_trrstatus["officer_birth_year"])
@@ -486,8 +493,19 @@ def main():
     update_first_name(df_trr)
     update_race(df_trrstatus)
     update_race(df_trr)
+    print("Reconciliation Done")
+    print("--------------------")
+    print("Processing Linking the Officers with trr_trr_refresh...")
+    print("It may take 5 minutes.")
     add_officer_id(df_trr, df_officer)
+    print("Linking the Officers with trr_trr_refresh Finished")
+    print("--------------------")
+    print("Processing Linking the Officers with trr_trr_refresh...")
+    print("It may take 20 minutes.")
     add_officer_id(df_trrstatus, df_officer)
+    print("Linking the Officers with trr_trr_refresh Finished")
+    print("--------------------")
+    print("Processing Linking the Police Unit IDs...")
     #
     # merge rank and star
     #
@@ -532,13 +550,15 @@ def main():
         df_trrstatus,
         sub_weapon_refresh,
     )
-
+    print("--------------------")
+    print("Processing Output...")
     df_trr.to_csv(r"../output/trr-trr.csv", index=False)
     df_weapondischarge.to_csv(r"../output/trr-weapondischarge.csv", index=False)
     df_trrstatus.to_csv(r"../output/trr-trrstatus.csv", index=False)
     sub_weapon_refresh.to_csv(r"../output/trr-subjectweapon.csv", index=False)
     df_charge.to_csv(r"../output/trr-charge.csv", index=False)
     df_actionresponse.to_csv(r"../output/trr-actionresponse.csv", index=False)
+    print("Everything is Done")
 
 
 if __name__ == "__main__":
