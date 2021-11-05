@@ -57,6 +57,9 @@ and use Pipenv.
 
 ### Dependency Installation
 
+There are there options, you can choose between pipenv,
+virtualenv, and Anaconda.
+
 **1. pipenv**
 
 To install the dependencies, use `pipenv install` to install from Pipfile. If you
