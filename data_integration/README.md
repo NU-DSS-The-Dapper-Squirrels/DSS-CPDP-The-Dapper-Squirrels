@@ -144,3 +144,7 @@ system path:
 ```bash
 python data_integration.py
 ```
+or
+```bash
+python3 data_integration.py
+```
