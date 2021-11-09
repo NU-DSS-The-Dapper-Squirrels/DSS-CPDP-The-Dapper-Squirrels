@@ -7,6 +7,8 @@ df = df[["date", "beat_id", "percent"]]
 # js = df.to_json(orient="records")
 # print(js)
 
+df["percent"] = (df["percent"] - df["percent"].mean()) / df["percent"].std()
+
 
 def retro_dictify(frame):
     d = {}
