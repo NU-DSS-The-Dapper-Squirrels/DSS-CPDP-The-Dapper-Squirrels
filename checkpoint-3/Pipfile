@@ -5,6 +5,11 @@ name = "pypi"
 
 [packages]
 pandas = "*"
+numpy = "*"
+shapely = "*"
+fiona = "*"
+six = "*"
+cython = "*"
 
 [dev-packages]
 

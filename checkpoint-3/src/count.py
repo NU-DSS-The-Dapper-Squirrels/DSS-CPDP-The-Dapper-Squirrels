@@ -2,7 +2,7 @@ import pandas as pd
 import pprint as pp
 import json
 
-df = pd.read_csv(r"../data/222.csv", dtype={0: str, 1: float, 2: str})
+df = pd.read_csv(r"../data/trr_att.csv", dtype={0: str, 1: float, 2: str})
 df = df[["date", "beat_id", "percent"]]
 # js = df.to_json(orient="records")
 # print(js)
@@ -23,5 +23,5 @@ def retro_dictify(frame):
 j = retro_dictify(df)
 pp.pprint(j)
 
-with open("../data/out.json", "w") as f:
+with open("../data/out1.json", "w") as f:
     json.dump(j, f)
