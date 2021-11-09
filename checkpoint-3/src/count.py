@@ -2,7 +2,7 @@ import pandas as pd
 import pprint as pp
 import json
 
-df = pd.read_csv(r"../data/trr_att.csv", dtype={0: str, 1: float, 2: str})
+df = pd.read_csv(r"../data/test333.csv", dtype={0: str, 1: float, 2: str})
 df = df[["date", "beat_id", "percent"]]
 # js = df.to_json(orient="records")
 # print(js)
