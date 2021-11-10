@@ -2,12 +2,12 @@ import pandas as pd
 import pprint as pp
 import json
 
-df = pd.read_csv(r"../data/4444.csv", dtype={0: str, 1: float, 2: str})
+df = pd.read_csv(r"../data/222.csv", dtype={0: str, 1: float, 2: str})
 df = df[["date", "beat_id", "percent"]]
 # js = df.to_json(orient="records")
 # print(js)
 
-df["percent"] = (df["percent"] - df["percent"].mean()) / df["percent"].std()
+# df["percent"] = (df["percent"] - df["percent"].mean()) / df["percent"].std()
 
 
 def retro_dictify(frame):
