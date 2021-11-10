@@ -25,5 +25,5 @@ def retro_dictify(frame):
 j = retro_dictify(df)
 pp.pprint(j)
 
-with open("../data/out1.json", "w") as f:
+with open("../data/out.json", "w") as f:
     json.dump(j, f)
