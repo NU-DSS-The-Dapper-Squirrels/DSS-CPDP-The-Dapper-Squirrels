@@ -16,7 +16,7 @@
 ## Theme
 
 Misconduct analysis in terms of different locations and communities can be valuable.
-Is there over-policing in low socio-eco statues neighborhoods? We could compare
+Is there over-policing in low socio-eco status neighborhoods? We could compare
 the low-income area data with high in-come area data. The income of the neighbor
 could be a factor to influence the “victim” narrative (complaint report). We plan
 to dive deep into the relationship between location, income level, and police
