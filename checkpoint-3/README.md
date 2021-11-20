@@ -18,8 +18,6 @@ The full report of the findings can be found here:
 
 [https://observablehq.com/@liux2/findings](https://observablehq.com/@liux2/findings).
 
-[https://observablehq.com/@harrygyao/bar-chart-race](https://observablehq.com/@harrygyao/bar-chart-race)
-
 There are also two PDFs in the directory for the un-interactive reports.
 
 ## SQL Used to Query the Data for Plots
