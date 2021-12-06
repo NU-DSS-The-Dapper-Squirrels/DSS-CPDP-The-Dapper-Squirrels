@@ -58,6 +58,16 @@ FROM data_complainant
 group by d.name;
 ```
 
+```sql
+WITH  a AS (SELECT * FROM data_allegation_areas,data_complainant,data_area
+WHERE data_complainant.allegation_id=data_allegation_areas.allegation_id
+  and data_area.id = data_allegation_areas.area_id
+  and data_area.area_type = 'community')
+SELECT name, count(*),median_income FROM a
+GROUP BY 1,3
+ORDER BY 2;
+```
+
 ### What are the TRRs(tactical response report) per capita?
 
 * For all officers showing in trr table:
