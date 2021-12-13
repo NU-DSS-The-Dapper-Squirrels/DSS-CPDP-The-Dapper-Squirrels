@@ -7,7 +7,7 @@
   - [System and Python](#system-and-python)
   - [Dependency Installation](#dependency-installation)
 - [Running the Program](#running-the-program)
-- [Note](#foreign keys)
+- [Note](#foreign-keys)
 
 ## Overview
 
@@ -153,14 +153,14 @@ or
 python3 data_integration.py
 ```
 
-## foreign keys
+## Foreign Keys
 1. For data_policeunit, since the original table has duplicated ids, we extracted one active id for that row.
 2. If no active ids existed, we used a random one.
 3. Here is the sql we used to extract the table:
 ```sql
 select *
-from (select *, count(*) over (partition by unit_name) as cnt, 
-    row_number() over (partition by unit_name order by active desc) as rank 
+from (select *, count(*) over (partition by unit_name) as cnt,
+    row_number() over (partition by unit_name order by active desc) as rank
     from data_policeunit) a
 where cnt::int=1 or (cnt>1 and active=true) or (cnt>1 and active=false and rank::int = 1);
 ```
