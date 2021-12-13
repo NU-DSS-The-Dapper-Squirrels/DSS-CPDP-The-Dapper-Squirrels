@@ -18,7 +18,7 @@ The full report of the findings can be found here:
 
 [https://observablehq.com/@liux2/findings](https://observablehq.com/@liux2/findings).
 
-There is also the PDF in the directory for the [un-interactive reports](findings.pdf).
+There is also the PDF in the directory for the [un-interactive reports](Report-on-Interactive-Visualization-Findings-Observable.pdf).
 
 ## SQL Used to Query the Data for Plots
 
