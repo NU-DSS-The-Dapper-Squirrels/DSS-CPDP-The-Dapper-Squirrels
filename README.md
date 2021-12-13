@@ -22,8 +22,7 @@ could be a factor to influence the “victim” narrative (complaint report). We
 to dive deep into the relationship between location, income level, and police
 misconduct.
 
-Our final report: [Final Report](Project-Report.pdf);
-
+Our final report: [Final Report](Project-Report.pdf);\
 Our final presentation: [Final Presentation](DSS-Final-Presentation.pdf).
 
 ## Relational Analysis Questions
