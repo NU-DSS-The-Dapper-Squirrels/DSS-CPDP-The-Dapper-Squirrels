@@ -33,7 +33,7 @@ Our final presentation: [Final Presentation](DSS-Final-Presentation.pdf).
 4. What is the percentage of each race in the community?
 5. What are the top 5 streets in allegation counts for each beat area?
 
-Please check out SQLs and findings in [`checkpoint-1`](checkpoint-1/).
+Please check out SQLs and findings in [`checkpoint-1`](checkpoint-1/README.md).
 
 ## Verification Technique
 
