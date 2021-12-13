@@ -18,6 +18,7 @@ query will be processed. You could also copy each query and paste in console.
 ### What are the TOP5 richest and lowest neighborhoods?
 
 * Table of the richest and lowest income:
+
 ```sql
 DROP TABLE IF EXISTS income_ranl;
 CREATE TEMP TABLE income_rank AS(
