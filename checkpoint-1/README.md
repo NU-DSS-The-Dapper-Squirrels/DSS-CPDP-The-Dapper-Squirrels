@@ -13,6 +13,10 @@ query will be processed. You could also copy each query and paste in console.
 4. [What is the percentage of each race in the community?](#what-is-the-percentage-of-each-race-in-the-community)
 5. [What are the top 5 streets in allegation counts for each beat area?](#what-is-the-top-5-streets-in-allegation-counts-for-each-beat-area)
 
+## Our Findings
+
+[Finding Repot](findings.pdf)
+
 ## Queries
 
 ### What are the TOP5 richest and lowest neighborhoods?

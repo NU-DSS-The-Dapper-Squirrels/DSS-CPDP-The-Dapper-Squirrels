@@ -17,7 +17,7 @@ search warrants granted in each complaint?
 ## How to View Analysis
 
 To review our workbook, please load the `visualization_book.twb` under `checkpoint-2/src`
-into Tableau. The default database used were offline version of CPDP, server version
+into Tableau. The default database used were offline version of CPDB, server version
 can be chosen by connection to server after loaded the workbook. However, relations
-between tables need to be reestablished. There are also finds in powerpoint format
-and PDF format.
+between tables need to be reestablished. There are also findings in powerpoint format
+and [PDF format](findings.pdf).

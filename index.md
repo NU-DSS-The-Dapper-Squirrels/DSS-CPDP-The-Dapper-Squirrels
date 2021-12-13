@@ -48,7 +48,7 @@ each community by years if change over time.
 capita. We could also consider lawsuits between “victims” and police officers;
 search warrants granted in each complaint?
 
-Please check out our code and findings in [`checkpoint-2`](checkpoint-2/).
+Please check out our code and findings in [`checkpoint-2`](checkpoint-2//README.md).
 
 ### Interactive Visualization
 
@@ -60,7 +60,7 @@ colors and plot TRRs on them. Set up a time slider to see how it changes over ti
 2. Using color code(heat map) of A&A (dara_officer assignment attendance) in different
 neighborhoods. Set up a time slider to see how it changes over time.
 
-Please check out our code and findings in [`checkpoint-3`](checkpoint-3/).
+Please check out our code and findings in [`checkpoint-3`](checkpoint-3//README.md).
 
 ### Graph Analytics
 
@@ -79,7 +79,7 @@ can be done with the following:
     4. Compare the top k largest cohort of police officers in high and low socio-economy
   status.
 
-Please check out our code and findings in [`checkpoint-4`](checkpoint-4/).
+Please check out our code and findings in [`checkpoint-4`](checkpoint-4//README.md).
 
 ### NLP models
 
@@ -92,7 +92,7 @@ span classical algorithms like TF-IDF and cutting-edge research methods like gra
 neural networks **[2]** and BERT **[3]**. We plan to dive deeper
 into the area and find out more effective and proper methods for us.
 
-Please check out our code and findings in [`checkpoint-5`](checkpoint-5/).
+Please check out our code and findings in [`checkpoint-5`](checkpoint-5//README.md).
 
 ## References
 
