@@ -23,7 +23,8 @@ to dive deep into the relationship between location, income level, and police
 misconduct.
 
 Our final report: [Final Report](Project-Report.pdf);\
-Our final presentation: [Final Presentation](DSS-Final-Presentation.pdf).
+Our final presentation: [Final Presentation](DSS-Final-Presentation.pdf);\
+A website version of the project: [Our Site](https://nu-dss-the-dapper-squirrels.github.io/The-Dapper-Squirrels/)
 
 ## Relational Analysis Questions
 
