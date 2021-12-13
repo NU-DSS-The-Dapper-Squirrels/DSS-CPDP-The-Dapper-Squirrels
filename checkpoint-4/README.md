@@ -21,7 +21,8 @@ can be done with the following:
 ## How to View Analysis
 
 To review our Google colab notebook, please visit this site:
-[https://colab.research.google.com/drive/1YRSb7iiFOVTxTrqlc6p9hdpZka9nRZf9?usp=sharing](https://colab.research.google.com/drive/1YRSb7iiFOVTxTrqlc6p9hdpZka9nRZf9?usp=sharing)
+[https://colab.research.google.com/drive/1YRSb7iiFOVTxTrqlc6p9hdpZka9nRZf9?usp=sharing](https://colab.research.google.com/drive/1YRSb7iiFOVTxTrqlc6p9hdpZka9nRZf9?usp=sharing)\
+An [un-interactive version](findings.pdf) is also available.
 
 Please check every steps mentioned in the notebook for setup. Run the necessary
 programs and download the necessary `jar` files.
