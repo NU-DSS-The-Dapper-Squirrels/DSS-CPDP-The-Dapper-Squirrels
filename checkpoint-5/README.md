@@ -18,6 +18,7 @@ narrative different from the incident summary?
 ## How to View Analysis
 
 To review our Google colab notebook, please visit this site:
-[https://colab.research.google.com/drive/1ZZ4zMlQYAEWSAqQTNWB4ZiriB1GS77X9?usp=sharing](https://colab.research.google.com/drive/1ZZ4zMlQYAEWSAqQTNWB4ZiriB1GS77X9?usp=sharing)
+[https://colab.research.google.com/drive/1ZZ4zMlQYAEWSAqQTNWB4ZiriB1GS77X9?usp=sharing](https://colab.research.google.com/drive/1ZZ4zMlQYAEWSAqQTNWB4ZiriB1GS77X9?usp=sharing)\
+An [un-interactive version](findings.pdf) is also available.
 
 Please check every steps mentioned in the notebook for setup.
